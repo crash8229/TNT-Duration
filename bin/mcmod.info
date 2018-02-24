@@ -1,0 +1,17 @@
+[
+{
+  "modid": "tntduration",
+  "name": "TNT Duration",
+  "description": "A simple mod that adds TNT blocks with different fuse delays and power.",
+  "version": "1.0.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["crash8229"],
+  "credits": "BedrockMiner for making great modding tutorials.",
+  "logoFile": "",
+  "screenshots": [],
+  "requiredMods": [ "Forge" ],
+  "dependencies": []
+}
+]
