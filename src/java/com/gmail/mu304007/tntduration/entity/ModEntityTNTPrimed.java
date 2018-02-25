@@ -170,18 +170,18 @@ public class ModEntityTNTPrimed extends Entity
      */
     public void onUpdate()
     {
-    	if (this.ticket == null) {
-    		this.getTicket();
-    	} else {
-    		forceChunks(this.chunkCoordX, this.chunkCoordZ);
-    	}
+//    	if (this.ticket == null) {
+//    		this.getTicket();
+//    	} else {
+//    		forceChunks(this.chunkCoordX, this.chunkCoordZ);
+//    	}
     	
-    	System.out.println((int)Math.floor(this.posX % 16));
-    	
-    	System.out.println("X: " + this.motionX);
-    	System.out.println("Y: " + this.motionY);
-    	System.out.println("Z: " + this.motionZ);
-    	System.out.println();
+//    	System.out.println((int)Math.floor(this.posX % 16));
+//    	
+//    	System.out.println("X: " + this.motionX);
+//    	System.out.println("Y: " + this.motionY);
+//    	System.out.println("Z: " + this.motionZ);
+//    	System.out.println();
     	
         this.prevPosX = this.posX;
         this.prevPosY = this.posY;
@@ -191,16 +191,16 @@ public class ModEntityTNTPrimed extends Entity
         
 //        this.moveEntity(this.motionX, 1D, this.motionZ);
         this.moveEntity(this.motionX, this.motionY, this.motionZ);
-//        this.motionX *= 0.9800000190734863D;
-//        this.motionY *= 0.9800000190734863D;
-//        this.motionZ *= 0.9800000190734863D;
+        this.motionX *= 0.9800000190734863D;
+        this.motionY *= 0.9800000190734863D;
+        this.motionZ *= 0.9800000190734863D;
 
-//        if (this.onGround)
-//        {
-//            this.motionX *= 0.699999988079071D;
-//            this.motionZ *= 0.699999988079071D;
-//            this.motionY *= -0.5D;
-//        }
+        if (this.onGround)
+        {
+            this.motionX *= 0.699999988079071D;
+            this.motionZ *= 0.699999988079071D;
+            this.motionY *= -0.5D;
+        }
 
         if (this.fuse-- <= 0)
         {

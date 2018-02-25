@@ -21,4 +21,10 @@ build
 eclipse
 run
 *.lock
-.settings/org.eclipse.jdt.core.prefs
+.settings
+resourcepacks
+config
+logs
+mods
+saves
+usernamecache.json
