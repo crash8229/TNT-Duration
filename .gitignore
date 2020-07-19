@@ -28,3 +28,6 @@ logs
 mods
 saves
 usernamecache.json
+
+# Files from Forge MDK
+forge*changelog.txt
