@@ -41,6 +41,5 @@ public class Main {
     public void postInit(FMLPostInitializationEvent e) {
         proxy.postInit(e);
     }
-    
-    
+
 }
